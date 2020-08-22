@@ -1,0 +1,61 @@
+.header {
+    @include row-flex();
+    @include md(justify-content, space-between);
+    align-items: center;
+    padding: 0 13px 0 13px;
+}
+.nav {
+    // @include sm(display,none);
+    // @include md(display,block);
+    width: 55%;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        list-style: none;
+        
+        &:not(:last-child) {
+            border-right: 1px dotted #ffffff;
+            padding-right: 16px;
+        }
+        a {
+            // @include lg(font-size,11px);
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 400;
+            &:hover {
+                color: #ec644b;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.phone {
+    @include row-flex();
+    // @include lg (width, 29%);
+    
+    width: 32%;
+    &__info {
+        @include row-flex();
+        @include md(flex-direction,column);
+        margin-right: 19px;
+    }
+    &__ask {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: right;
+    }
+    &__number {
+        // @include lg(font-size, 16px);
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,35 @@
+.advanteg {
+  min-height: 590px;
+  background-color: #f3f3f3;
+  padding: 58px 0 51px 0;
+  &__list {
+    margin-top: 31px;
+    @include row-flex();
+    @include md(justify-content, space-around);
+   
+  }
+  &__item {
+    @include row-flex();
+    @include size(6);
+    align-items: flex-start;
+    margin-top: 36px;
+   
+  }
+  &__img {
+    display: block;
+    margin-right: 17px;
+  }
+  &__title {
+    color: #ec644b;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__text {
+      width: 409px;
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}
+

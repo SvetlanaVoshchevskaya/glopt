@@ -1,0 +1,60 @@
+.promo {
+  background: url('../img/promo-bg.jpg') center (center/cover) no-repeat;
+  min-height: 680px;
+  padding: 23px 0 82px 0;
+  &__title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 58px;
+  }
+  &__main-subtitle {
+    // @include md(font-size,62px);
+    color: #ec644b;
+    font-family: 'Roboto Condensed';
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 26px;
+  }
+  &__subtitle {
+    // @include md(font-size,36px);
+    color: #ffffff;
+    font-family: 'Roboto Condensed';
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 42px;
+    &::after {
+      // @include md(width,750px);
+      // @include md(margin-left,-30px);
+      content: '';
+      width: 809px;
+      height: 10px;
+      display: inline-block;
+      background: url(../img/promo_divide.png);
+      margin-top: 38px;
+    }
+  }
+  &__list {
+    margin-top: 30px;
+    @include row-flex();
+    @include md(justify-content, space-between);
+  }
+  &__item {
+    @include size(3);
+    @include row-flex();
+    // @include md(font-size,14px);
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    img {
+      margin: 0 auto;
+    }
+  }
+}
